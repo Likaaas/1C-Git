@@ -243,6 +243,7 @@
 			<Language>Русский</Language>
 			<CommonModule>ОбщийМодульСервер</CommonModule>
 			<Catalog>Справочник</Catalog>
+			<DataProcessor>Змейка</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

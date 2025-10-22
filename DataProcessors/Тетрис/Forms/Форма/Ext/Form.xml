@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновные" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновныеРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОсновныеЛевая" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные левая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные левая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновныеЛеваяРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="Поле7" id="1">
+							<DataPath>Поле7</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>22</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>22</MaxWidth>
+							<Height>15</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>15</MaxHeight>
+							<ShowGrid>true</ShowGrid>
+							<ContextMenu name="Поле7КонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="Поле7РасширеннаяПодсказка" id="3"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОсновныеПравая" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные правая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные правая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновныеПраваяРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<InputField name="ТекНомерФигуры" id="54">
+							<DataPath>ТекНомерФигуры</DataPath>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекНомерФигурыКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ТекНомерФигурыРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<UsualGroup name="ГруппаКоманды" id="14">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="15"/>
+							<ChildItems>
+								<Button name="КомандаЛево" id="12">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаЛево</CommandName>
+									<ExtendedTooltip name="КомандаЛевоРасширеннаяПодсказка" id="13"/>
+								</Button>
+								<Button name="КомандаПовернуть" id="82">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаПовернуть</CommandName>
+									<ExtendedTooltip name="КомандаПовернутьРасширеннаяПодсказка" id="83"/>
+								</Button>
+								<Button name="КомандаПраво" id="10">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаПраво</CommandName>
+									<ExtendedTooltip name="КомандаПравоРасширеннаяПодсказка" id="11"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПараметры" id="84">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="85"/>
+							<ChildItems>
+								<InputField name="ТекНаправлениеФигуры" id="79">
+									<DataPath>ТекНаправлениеФигуры</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТекНаправлениеФигурыКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ТекНаправлениеФигурыРасширеннаяПодсказка" id="81"/>
+								</InputField>
+								<InputField name="СамаяНизкаяКоордината" id="57">
+									<DataPath>СамаяНизкаяКоордината</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СамаяНизкаяКоординатаКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="СамаяНизкаяКоординатаРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ТекПоле" id="36">
+									<DataPath>ТекПолеСтрока</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТекПолеКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ТекПолеРасширеннаяПодсказка" id="38"/>
+								</InputField>
+								<InputField name="ТекПолеКолонка" id="39">
+									<DataPath>ТекПолеКолонка</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТекПолеКолонкаКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ТекПолеКолонкаРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<UsualGroup name="ГруппаКомандыФигуры" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа команды фигуры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа команды фигуры</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомандыФигурыРасширеннаяПодсказка" id="33"/>
+									<ChildItems>
+										<Button name="Команда1" id="34">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Команда1</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>O</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="35"/>
+										</Button>
+										<Button name="Команда2" id="42">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Команда2</CommandName>
+											<ExtendedTooltip name="Команда2РасширеннаяПодсказка" id="43"/>
+										</Button>
+										<Button name="Команда3" id="48">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Команда3</CommandName>
+											<ExtendedTooltip name="Команда3РасширеннаяПодсказка" id="49"/>
+										</Button>
+										<Button name="Команда4" id="44">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Команда4</CommandName>
+											<ExtendedTooltip name="Команда4РасширеннаяПодсказка" id="45"/>
+										</Button>
+										<Button name="Команда5" id="46">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Команда5</CommandName>
+											<ExtendedTooltip name="Команда5РасширеннаяПодсказка" id="47"/>
+										</Button>
+										<Button name="Команда6" id="52">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Команда6</CommandName>
+											<ExtendedTooltip name="Команда6РасширеннаяПодсказка" id="53"/>
+										</Button>
+										<Button name="Команда7" id="50">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Команда7</CommandName>
+											<ExtendedTooltip name="Команда7РасширеннаяПодсказка" id="51"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="ПоляФигуры" id="16">
+									<Representation>List</Representation>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<DataPath>ПоляФигуры</DataPath>
+									<RowPictureDataPath>ПоляФигуры.Picture</RowPictureDataPath>
+									<ContextMenu name="ПоляФигурыКонтекстноеМеню" id="17"/>
+									<AutoCommandBar name="ПоляФигурыКоманднаяПанель" id="18"/>
+									<ExtendedTooltip name="ПоляФигурыРасширеннаяПодсказка" id="19"/>
+									<SearchStringAddition name="ПоляФигурыСтрокаПоиска" id="20">
+										<AdditionSource>
+											<Item>ПоляФигуры</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПоляФигурыСтрокаПоискаКонтекстноеМеню" id="21"/>
+										<ExtendedTooltip name="ПоляФигурыСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПоляФигурыСостояниеПросмотра" id="23">
+										<AdditionSource>
+											<Item>ПоляФигуры</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПоляФигурыСостояниеПросмотраКонтекстноеМеню" id="24"/>
+										<ExtendedTooltip name="ПоляФигурыСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПоляФигурыУправлениеПоиском" id="26">
+										<AdditionSource>
+											<Item>ПоляФигуры</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПоляФигурыУправлениеПоискомКонтекстноеМеню" id="27"/>
+										<ExtendedTooltip name="ПоляФигурыУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ПоляФигурыЗначение" id="29">
+											<DataPath>ПоляФигуры.Value</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПоляФигурыЗначениеКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ПоляФигурыЗначениеРасширеннаяПодсказка" id="31"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="СохраненныеФигуры" id="60">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СохраненныеФигуры</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СохраненныеФигурыКонтекстноеМеню" id="61"/>
+									<AutoCommandBar name="СохраненныеФигурыКоманднаяПанель" id="62"/>
+									<ExtendedTooltip name="СохраненныеФигурыРасширеннаяПодсказка" id="63"/>
+									<SearchStringAddition name="СохраненныеФигурыСтрокаПоиска" id="64">
+										<AdditionSource>
+											<Item>СохраненныеФигуры</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СохраненныеФигурыСтрокаПоискаКонтекстноеМеню" id="65"/>
+										<ExtendedTooltip name="СохраненныеФигурыСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СохраненныеФигурыСостояниеПросмотра" id="67">
+										<AdditionSource>
+											<Item>СохраненныеФигуры</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СохраненныеФигурыСостояниеПросмотраКонтекстноеМеню" id="68"/>
+										<ExtendedTooltip name="СохраненныеФигурыСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СохраненныеФигурыУправлениеПоиском" id="70">
+										<AdditionSource>
+											<Item>СохраненныеФигуры</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СохраненныеФигурыУправлениеПоискомКонтекстноеМеню" id="71"/>
+										<ExtendedTooltip name="СохраненныеФигурыУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="СохраненныеФигурыКоординатаСтрока" id="73">
+											<DataPath>СохраненныеФигуры.Координата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СохраненныеФигурыКоординатаСтрокаКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="СохраненныеФигурыКоординатаСтрокаРасширеннаяПодсказка" id="75"/>
+										</InputField>
+										<InputField name="СохраненныеФигурыФигура" id="76">
+											<DataPath>СохраненныеФигуры.Фигура</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СохраненныеФигурыФигураКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="СохраненныеФигурыФигураРасширеннаяПодсказка" id="78"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Тетрис</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Поле7" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле7</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоляФигуры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поля фигуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекПолеСтрока" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тек поле строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекПолеКолонка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тек поле колонка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекНомерФигуры" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая фигура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СамаяНизкаяКоордината" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Самая низкая координата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СохраненныеФигуры" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохраненные фигуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Координата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Координата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Фигура" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фигура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекНаправлениеФигуры" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тек направление фигуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЛево" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда лево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЛево</Action>
+		</Command>
+		<Command name="КомандаПраво" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда право</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПраво</Action>
+		</Command>
+		<Command name="Команда1" id="3">
+			<Action>Команда1</Action>
+		</Command>
+		<Command name="Команда2" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>I</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Команда2</Action>
+		</Command>
+		<Command name="Команда3" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>J</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Команда3</Action>
+		</Command>
+		<Command name="Команда4" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>L</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Команда4</Action>
+		</Command>
+		<Command name="Команда5" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>T</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Команда5</Action>
+		</Command>
+		<Command name="Команда6" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>S</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Команда6</Action>
+		</Command>
+		<Command name="Команда7" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Z</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Команда7</Action>
+		</Command>
+		<Command name="КомандаПовернуть" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>-</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда повернуть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПовернуть</Action>
+		</Command>
+	</Commands>
+</Form>

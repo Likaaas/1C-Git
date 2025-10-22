@@ -244,6 +244,8 @@
 			<CommonModule>ОбщийМодульСервер</CommonModule>
 			<Catalog>Справочник</Catalog>
 			<DataProcessor>Змейка</DataProcessor>
+			<DataProcessor>КрестикиНолики</DataProcessor>
+			<DataProcessor>Тетрис</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
